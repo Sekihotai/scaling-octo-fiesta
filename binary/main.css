@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500&display=swap');
 
 .bg {
-    background-color:pink
+    background-color: pink
 }
 
 body {
@@ -18,6 +18,12 @@ h2 {
     font-family: 'Noto Sans', sans-serif;
     text-align: center;
     padding: 5px;
+    margin-left: 35%;
+    margin-right: 35%;
+    border-style: solid;
+    border-color: rgb(161, 114, 122);
+    border-radius: 100px;
+    background-color: rgb(221, 162, 172);
 }
 
 h1 {
@@ -29,11 +35,19 @@ h1 {
 }
 
 #title-container {
-    position: relative;
     margin-left: 40%;
     margin-right: 40%;
     border: 30px solid rgb(221, 162, 172);
     background-color: rgb(161, 114, 122);
+}
+
+#title-container:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+}
+
+#title-container:hover + #hidden {
+    display: block;
 }
 
 .text {
@@ -119,6 +133,30 @@ h1 {
 }
 
 img:hover {
-    -webkit-transform:scale(1.2); 
-    transform:scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+#hidden {
+    display: none;
+    text-align: center;
+    font-family: 'Noto Sans', sans-serif;
+    color: white;
+    text-align: center;
+    margin: -20px;
+    font-size: 30px;
 }

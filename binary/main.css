@@ -160,3 +160,19 @@ img:hover {
     margin: -20px;
     font-size: 30px;
 }
+
+#question {
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Noto Sans', sans-serif;
+    color: white;
+
+}
+
+.button1 {
+    color: black;
+}
+
+#test {
+    display: none
+}

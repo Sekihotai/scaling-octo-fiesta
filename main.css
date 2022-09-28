@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500&display=swap');
 
+.bg {
+    background-color:pink
+}
+
 body {
     background-color: rgb(221, 162, 172)
 }
@@ -13,9 +17,8 @@ h2 {
     color: white;
     font-family: 'Noto Sans', sans-serif;
     text-align: center;
-    padding: 5px
+    padding: 5px;
 }
-
 
 .text {
     font-family: 'Noto Sans', sans-serif;
@@ -33,22 +36,16 @@ h2 {
     font-size: 150%;
 }
 
-#count:hover {
-    background-color: pink;
-    transition-duration: 1s;
-}
-
 .centerd {
     display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 60%;
-  padding: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    padding: 25px;
 }
 
 .lazyspacing {
     color: pink;
-
 }
 
 .stupid:hover {
@@ -64,11 +61,47 @@ h2 {
     border-style: solid;
     border-color: white;
     border-radius: 25px;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 20%;
+    margin-right: 20%;
 }
 
 #frusterating {
-    width: 500px;
+    width: 40%;
 }
 
+#bigpic {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    padding: 25px;
+}
+
+.rgbexample {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    padding: 25px;
+}
+
+.lol {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    padding: 25px;
+}
+
+.binaryexample {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    padding: 25px;
+}
+
+.border:hover {
+    transititon-duration: 1s;
+    background-color: pink
+}

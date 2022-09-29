@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,34 +8,36 @@
     <link rel="stylesheet" href="main.css">
     <style>
     </style>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <script>
         function myFunction() {
-  var x = document.getElementById("disappearing");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
-}
+            var x = document.getElementById("disappearing");
+            if(x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
 
-function donda() {
-  var x = document.getElementById("changing");
-  if (x.innerHTML === "Did you understand everything?") {
-    x.innerHTML = "Great!";
-  } else {
-    x.innerHTML = "Great!";
-  }
-}
-</script>
+        function donda() {
+            var x = document.getElementById("changing");
+            if(x.innerHTML === "Did you understand everything?") {
+                x.innerHTML = "Great!";
+            } else {
+                x.innerHTML = "Great!";
+            }
+        }
+    </script>
 </head>
 <!--Hi Tim!-->
+
 <body>
     <div id='title-container'>
         <h1>Binary: Potential Uses</h1>
     </div>
     <div id='hidden'>
         <b>DON'T SHAKE ME</b>
-        </div>
+    </div>
     <h2>Counting with Binary</h2>
     <div class='border'>
         <div class='text'>
@@ -93,22 +96,20 @@ function donda() {
             <p> In the chart above, every number up to 15 can be converted to binary and hexadecimal. <br>You'll also notice that the hexadecimal numbers are much easier to intepret. <br>Instead of having four bit numbers like 0010 or 0111 or whatever string of binary, <br>you can count regularly up to 9, then recall the regular alphabet until 15. <br>It's much easier to remember, and carries the same meaning as a binary string. Neat! </p>
         </div>
     </div>
-
-<div class='lazyspacing'>.</div>
-
-
-<div class='border'>
-    <div id='question'>
-        <p id='changing'>Did you understand everything?<p>
-            <button type='enabled' onclick='donda()' class='button1'>Yes, I did!</button>
-            
+    <div class='lazyspacing'>.</div>
+    <div class='border'>
+        <div id='question'>
+            <p id='changing'>Did you understand everything?
+            <p>
+                <button type='enabled' onclick='donda()' class='button1'>Yes, I did!</button>
             <div id='disappearing'>
-            <button type='enabled' onclick='myFunction()' class='button1'>No, not really...</button>
+                <button type='enabled' onclick='myFunction()' class='button1'>No, not really...</button>
             </div>
+        </div>
     </div>
-</div>
     <div class='text'>
         <p>Made with ❤️ by Andrew Nguyen<br><a href="https://spiritualsworld.xyz">Back to Site</a></p>
     </div>
 </body>
+
 </html>

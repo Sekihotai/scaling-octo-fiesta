@@ -27,6 +27,15 @@
                 x.innerHTML = "Great!";
             }
         }
+
+        function creepyshift() {
+            var x = document.getElementById("changing");
+            if(x.innerHTML === "Did you understand everything?") {
+                x.innerHTML = "Wrong answer. Let's try this again. Did you understand everything?";
+            } else {
+                x.innerHTML = "Wrong answer. Let's try this again. Did you understand everything?";
+            }
+        }
     </script>
 </head>
 <!--Hi Tim!-->
@@ -103,7 +112,7 @@
             <p>
                 <button type='enabled' onclick='donda()' class='button1'>Yes, I did!</button>
             <div id='disappearing'>
-                <button type='enabled' onclick='myFunction()' class='button1'>No, not really...</button>
+                <button type='enabled' onclick='myFunction();creepyshift();' class='button1'>No, not really...</button>
             </div>
         </div>
     </div>

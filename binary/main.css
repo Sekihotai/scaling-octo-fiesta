@@ -132,6 +132,10 @@ h1 {
     padding: 25px;
 }
 
+img {
+    transition: transform 1s ease;
+}
+
 img:hover {
     -webkit-transform: scale(1.2);
     transform: scale(1.2);

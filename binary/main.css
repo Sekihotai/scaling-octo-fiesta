@@ -173,7 +173,9 @@ img:hover {
     color: white;
     font-family: 'Noto Sans', sans-serif;
     background-color: rgb(221, 162, 172);
-    font-size: 50%
+    font-size: 50%;
+    border-style: solid;
+    border-color: rgb(161, 114, 122)
 
 }
 
